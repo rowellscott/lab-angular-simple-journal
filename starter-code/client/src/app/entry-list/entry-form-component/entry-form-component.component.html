@@ -1,0 +1,18 @@
+<div *ngIf="isVisible">
+<form (ngSubmit)="submitForm(myForm)" #myForm="ngForm">
+    <h3>New Entry</h3>
+    <p> 
+      Title:
+      <br>
+      <input type="text" name="title" [(ngModel)]="title" #myTitle="ngModel" required/>
+    </p>
+    <p>
+    Content:
+    <br>
+    <textarea name="content" [(ngModel)]="content" rows="4"></textarea>
+    </p>
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+</div>
+<button (click)="toggleVis()">Hide/Show Entry Form</button>

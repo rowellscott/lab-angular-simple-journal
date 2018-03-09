@@ -11,7 +11,7 @@ import { JournalEntriesService } from './journal-entries.service';
 import { AppComponent } from './app.component';
 import { EntryListComponent } from './entry-list/entry-list.component';
 import { SingleEntryComponent } from './single-entry/single-entry.component';
-import { EntryFormComponentComponent } from './entry-form-component/entry-form-component.component';
+import { EntryFormComponentComponent } from './entry-list/entry-form-component/entry-form-component.component';
 
 @NgModule({
   declarations: [
