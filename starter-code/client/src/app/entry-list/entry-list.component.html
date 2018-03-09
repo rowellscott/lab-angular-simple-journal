@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <div *ngFor="let entry of entries">
+            <ul>
+              <li>{{entry.title}}</li>
+              <li>{{entry.date | date:'short'}}</li>
+              <a [routerLink]="['entry', entry._id]">View Entry</a>
+            </ul>
+          </div>
+    </div>
+    <div class="col-sm-6">
+      
+    </div>
+  </div>
+</div>
